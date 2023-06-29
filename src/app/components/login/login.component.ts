@@ -29,9 +29,9 @@ export class LoginComponent implements OnInit {
     let user = this.form.value.user
     let password = this.form.value.password
 
-    if (user == 'usuario' && password == 'casa') {
+    if (user == 'usuario' && password == 'casa')
       this.success()
-    } else {
+    else {
       this.error()
       this.form.reset()
     }
